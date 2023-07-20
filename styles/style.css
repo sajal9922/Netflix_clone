@@ -18,7 +18,9 @@ html{
 body{
   background: var(--color-background);
   color: var(--color-text-primary);
+  font-size: 1.5rem;
 }
+
 
 /* ------------------- Banner----------------- */
 
@@ -69,4 +71,55 @@ body{
 .down-arrow{
   width: 1.2rem;
   margin-left: 1rem;
+}
+
+/* -----------------Header Content--------------- */
+
+.header-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: 10rem;
+}
+.header-title{
+  font-size: 6rem;
+  line-height: 7rem;
+  max-width: 65rem;
+  font-weight: 600;
+  margin: 0;
+}
+.header-title-2{
+  font-weight: 400;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+
+}
+
+.email-signup{
+  background: var(--color-text-primary);
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  border-radius: 0.3rem;
+  overflow: hidden;
+
+}
+
+.header-input-box{
+  flex: 1;
+  border: 0;
+  outline: 0;
+  margin-left: 2rem;
+}
+
+.signup-button{
+  background: var(--color-button-primary);
+  color: var(--color-text-primary);
+  font-size: 1.6rem;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  padding: 1.6rem 3rem;
 }
