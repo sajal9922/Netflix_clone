@@ -92,9 +92,8 @@ body{
   margin-top: 10rem;
 }
 .header-title{
-  font-size: 6rem;
+  font-size: 5rem;
   line-height: 7rem;
-  max-width: 65rem;
   font-weight: 600;
   margin: 0;
 }
@@ -106,20 +105,29 @@ body{
 }
 
 .email-signup{
-  background: var(--color-text-primary);
-  display: flex;
-  align-items: center;
+  background:rgba(0,0,0,0.5);
+  display: inline-flex;
   margin-top: 3rem;
   border-radius: 0.3rem;
-  overflow: hidden;
+  padding: 1.6rem 1rem;
+  width: 50%;
+  border: 1px solid #ccc;
+
+ 
 
 }
 
 .header-input-box{
   flex: 1;
-  border: 0;
+  border:0;
   outline: 0;
   margin-left: 2rem;
+  background: transparent;
+  color: var(--color-text-primary);
+}
+.header-input-box::placeholder{
+  color: var(--color-text-primary);
+
 }
 
 .signup-button{
@@ -136,3 +144,60 @@ body{
   background: #a20202;
 
 }
+
+
+/* -----------------Feature content------------------- */
+.block-container{
+  /* padding: 5rem 12%; */
+  font-size: 2.2rem;
+}
+
+.features{
+  display: flex;
+  padding: 10rem 12%;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+
+}
+
+.features-content,
+.features-image{
+  flex-basis: 50%;
+  margin-bottom: 2rem;
+}
+.features-image img{
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+
+.features-heading{
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.fearures-border{
+  width:100% ;
+  height: 1rem;
+  border: 0;
+  background: #313030;
+  
+}
+@media screen and (min-width: 768px){
+  .features:nth-of-type(even) .features-content{
+    order: 2;
+  }
+}
+
+/* -----------------Frequently Asked Questions------------ */
+.faq{
+  padding: 1rem 12%;
+  text-align: center;
+  font-size: 1.8rem;
+}
+.faq-heading{
+  font-size: 4rem;
+  margin-top: 5rem;
+}
+
