@@ -188,7 +188,7 @@ body{
   background: #313030;
   
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 720px){
   .features:nth-of-type(even) .features-content{
     order: 2;
   }
@@ -294,6 +294,76 @@ input[type='radio']{
   color: rgba(255, 255, 255, 0.5);
   font-size: 1.3rem;
   margin-top: 2rem;
+}
+
+
+/* ---------------Media Queries for smaller screen------------- */
+
+@media screen and (max-width:760px) {
+  .logo{
+    width: 10rem;
+  }
+  .navigation-button{
+    padding: 0.5rem 1rem;
+  }
+  .language-button{
+    padding: 0.4rem 0.8rem;
+  }
+  .header-content{
+    position: unset;
+    transform: none;
+    padding-top: 10rem;
+  
+  }
+  .header-title{
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+  .email-signup,
+  .signup-button{
+    font-size: 1.4rem;
+    padding: 1rem 1.5rem;
+  }
+  .header-input-box{
+    margin-left: 0;
+  }
+  .features-content,
+  .features-image{
+    flex-basis: 100%;
+  }
+  .features-heading{
+    font-size: 3rem;
+  }
+  .features-description{
+    font-size: 1.6rem;
+  }
+  .features{
+    padding: 3rem 12%;
+  }
+  .fearures-border{
+    height: 0.5rem;
+  }
+  .faq{
+    padding: 3rem 8%;
+  }
+
+  .faq-heading{
+    font-size: 3rem;
+  }
+  .accordion li label{
+    font-size: 1.6rem;
+    padding: 1rem;
+  }
+  label::after{
+    font-size: 2.2rem;
+  }
+  .content{
+    font-size: 1.5rem;
+  }
+  .accordion-footer{
+    font-size: 1.4rem;
+  }
+  
 }
 
 
